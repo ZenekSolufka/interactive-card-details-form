@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+</head>
+<body>
+
+  <div class="card-front">
+    <div class="profile">
+      <img src="images/card-logo.svg" alt="">
+    </div>
+    <p class="card-num">
+      <span>0000</span>
+      <span>0000</span>
+      <span>0000</span>
+      <span>0000</span>
+    </p>
+    <div class="card-info">
+      <p class="card-name">JANE APPLESSEED</p>
+      <p class="card-expiration">
+      <span class="month">00</span>
+      /
+      <span class="year">00</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="card-back">
+    <p class="cvc-number">000</p>
+  </div>
+
+  <div class="card-front-mobile">
+    <div class="profile">
+      <img src="images/card-logo.svg" alt="">
+    </div>
+      <p class="card-num-mobile">
+        <span>0000</span>
+        <span>0000</span>
+        <span>0000</span>
+        <span>0000</span>
+      </p>
+    <div class="card-info">
+      <p class="card-name-mobile">JANE APPLESSEED</p>
+      <p class="card-expiration">
+        <span class="month-mobile">00</span>
+        /
+        <span class="year-mobile">00</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="card-back-mobile">
+    <p class="cvc-number-mobile">000</p>
+  </div>
+
+  <div class="main">
+    <div class="left">
+      <img class="desktop-img" src="images/bg-main-desktop.png" alt="">
+      <img class="mobile-img" src="images/bg-main-mobile.png" alt="">
+    </div>
+  
+    <form>
+      <div class="right">
+        <p>CARDHOLDER NAME</p>
+        <input class="name" type="text" placeholder="e.g. Jane Appleseed">
+        <p class="name-active hidden">Can't be blank</p>
+
+        <p>CARD NUMBER</p>
+        <input class="card-number" type="text" placeholder="e.g. 1234 5678 9123 0000">
+        <p class="num-active hidden">Wrong format, numbers only</p>
+
+        <div class="expiration">
+          <div class="date">
+            <p>EXP. DATE (MM/YY)</p>
+            <input class="mm" type="text" placeholder="MM">
+            <input class="yy" type="text" placeholder="YY">
+            <p class="mm-active hidden">Can't be blank</p>
+          </div>
+
+          <div class="cvc">
+            <p>CVC</p>
+            <input class="cv" type="text" placeholder="e.g. 123">
+            <p class="cvc-active hidden">Can't be blank</p>
+          </div>
+        </div>
+        <button class="confirm-btn" type="button">Confirm</button>
+      </div>
+
+    </form>
+    <div class="completed-state-right hidden">
+      <div class="completed-stage">
+      <div class="completed-image">
+        <img src="images/icon-complete.svg" alt="">
+      </div>
+      <h1>Thank you!</h1>
+      <p>We've added your card details</p>
+      <button class="continue-btn" type="button">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Completed state start -->
+
+
+  
+  <script src="main.js"></script>
+</body>
+</html>
